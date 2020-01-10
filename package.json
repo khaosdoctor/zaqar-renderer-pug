@@ -1,0 +1,61 @@
+{
+  "name": "zaqar-renderer-pug",
+  "version": "1.0.0",
+  "description": "Pug renderer for Zaqar email microservice",
+  "main": "dist/index.js",
+  "scripts": {
+    "pretest": "npm run build",
+    "prepare": "rm -rf dist && npm test",
+    "test": "mocha ./tests",
+    "build": "tsc",
+    "coverage": "nyc mocha --timeout 10000 --require source-map-support/register --recursive tests/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaosdoctor/zaqar-renderer-pug.git"
+  },
+  "nyc": {
+    "extension": [
+      ".js"
+    ],
+    "exclude": [
+      "**/*.d.ts",
+      "dist/**/*.*",
+      "coverage"
+    ],
+    "reporter": [
+      "text",
+      "html",
+      "lcov"
+    ],
+    "all": true
+  },
+  "keywords": [
+    "zaqar",
+    "email",
+    "pug",
+    "renderer",
+    "microservice"
+  ],
+  "author": "Lucas Santos <hello@lsantos.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khaosdoctor/zaqar-renderer-pug/issues"
+  },
+  "homepage": "https://github.com/khaosdoctor/zaqar-renderer-pug#readme",
+  "devDependencies": {
+    "@types/pug": "^2.0.4",
+    "@types/node": "^12.12.12",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "source-map-support": "^0.5.16",
+    "typescript": "^3.7.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "private": false,
+  "dependencies": {
+    "pug": "^2.0.4"
+  }
+}
