@@ -1,11 +1,11 @@
-# Mustache template renderer for Zaqar
+# Pug template renderer for Zaqar
 
-[![Build Status](https://travis-ci.org/khaosdoctor/zaqar-renderer-mustache.svg?branch=master)](https://travis-ci.org/khaosdoctor/zaqar-renderer-mustache)
+[![Build Status](https://travis-ci.org/khaosdoctor/zaqar-renderer-pug.svg?branch=master)](https://travis-ci.org/khaosdoctor/zaqar-renderer-pug)
 
-Mustache renderer for [Zaqar](https://github.com/khaosdoctor/zaqar) email microservice
+Pug renderer for [Zaqar](https://github.com/khaosdoctor/zaqar) email microservice
 
-> **lang:** mustache
+> **lang:** pug
 
 ## Usage
 
-Just set the `RENDERER_LIST` environment variable to `zaqar-renderer-mustache`. Zaqar will then install it and use it as `lang: mustache`.
+Just set the `RENDERER_LIST` environment variable to `zaqar-renderer-pug`. Zaqar will then install it and use it as `lang: pug`.
