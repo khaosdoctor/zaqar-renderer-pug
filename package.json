@@ -56,6 +56,6 @@
   ],
   "private": false,
   "dependencies": {
-    "pug": "^2.0.4"
+    "pug": "^3.0.1"
   }
 }
